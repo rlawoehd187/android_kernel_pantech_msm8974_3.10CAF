@@ -71,6 +71,8 @@ obj-$(CONFIG_USB_EXT_TYPE_C_PERICOM)	+= type-c-pericom.o
 obj-$(CONFIG_USB_EXT_TYPE_C_TI)		+= type-c-ti.o
 obj-$(CONFIG_UID_CPUTIME) 	+= uid_cputime.o
 obj-$(CONFIG_DRV2603) += drv2603.o
+# 20130725 lcj@LS3
+obj-$(CONFIG_PANTECH_WLAN_DEBUG) += wlan_debug.o
 # CONFIG_PN544
 obj-$(CONFIG_PN544) 		+= pn544.o
 # CONFIG_PN547
