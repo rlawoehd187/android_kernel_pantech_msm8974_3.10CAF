@@ -1027,6 +1027,10 @@ config SECURE_TOUCH
 
 	  If unsure, say N.
 
+config TOUCHSCREEN_ATMEL_MXT_FW30
+	bool "atmel touch driver"
+	depends on I2C 
+
 config TOUCHSCREEN_GT9XX
 	bool "Goodix touchpanel GT9xx series"
 	depends on I2C
