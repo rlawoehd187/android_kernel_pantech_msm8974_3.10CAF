@@ -172,3 +172,5 @@ obj-$(CONFIG_SENSORS)		+= sensors/
 obj-$(CONFIG_SENSORS_SSC)	+= sensors/
 
 obj-$(CONFIG_PANTECH_SELINUX_DENIAL_LOG)       += avclog/
+
+obj-$(CONFIG_SKY_DMB)		+= dmb/
