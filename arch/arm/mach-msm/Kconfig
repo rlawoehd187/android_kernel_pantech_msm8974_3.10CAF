@@ -385,6 +385,9 @@ config ARCH_MSM8226
 	select PINCTRL_MSM_TLMM
 	select ENABLE_VMALLOC_SAVINGS
 	select MSM_IRQ
+
+source "arch/arm/mach-msm/pantech/Kconfig"
+
 endmenu
 
 config MSM_KRAIT_TBB_ABORT_HANDLER
