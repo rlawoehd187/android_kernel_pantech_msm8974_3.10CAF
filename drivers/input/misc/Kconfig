@@ -863,5 +863,36 @@ config SENSORS_ISL29044A
 	help
 	 This option enables support for the INTERSIL ISL29044A P/L sensor.
 
+
+config INPUT_FPC1080
+	tristate "FPC1080 fingerprint sensor support"
+	depends on SPI_MASTER
+	default n
+
+config FPC1080_NAVIGATION
+	tristate "FPC1080 fingerprint sensor navigation support"
+	depends on INPUT_FPC1080
+	default n
+
+config FPC1080_MOUSE
+	tristate "FPC1080 fingerprint sensor mouse support"
+	depends on INPUT_FPC1080
+	default n
+
+config INPUT_FPC1080_MODULE
+	tristate "FPC1080 fingerprint sensor support"
+	depends on SPI_MASTER
+	default n
+
+config FPC1080_NAVIGATION
+	tristate "FPC1080 fingerprint sensor navigation support"
+	depends on INPUT_FPC1080_MODULE
+	default n
+
+config FPC1080_MOUSE
+	tristate "FPC1080 fingerprint sensor mouse support"
+	depends on INPUT_FPC1080_MODULE
+	default n
+
 endif
 
