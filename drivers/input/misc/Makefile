@@ -91,3 +91,4 @@ obj-$(CONFIG_SENSORS_MC3430)	+= mc3xxx.o
 obj-$(CONFIG_SENSORS_ISL29044A)	+= isl29044a.o
 obj-$(CONFIG_INPUT_FPC1080)		+= fpc1080.o
 obj-$(CONFIG_INPUT_FPC1080_MODULE)	+= fpc1080_module.o
+obj-$(CONFIG_INPUT_GPIO)		+= gpio_switch.o 
