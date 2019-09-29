@@ -78,3 +78,8 @@ obj-$(CONFIG_MSM_SMCMOD) += smcmod.o
 obj-$(CONFIG_ARCH_MSM8974) += msm_mpmctr.o
 
 obj-$(CONFIG_PERFMAP) += perfmap.o
+
+obj-$(CONFIG_PANTECH_ERR_CRASH_LOGGING) += sky_sys_reset.o pantech_apanic.o
+
+obj-$(CONFIG_PANTECH_ERR_CRASH_LOGGING) += pantech_restart.o pantech_sys.o pantech_apanic.o pantech_debug.o
+obj-$(CONFIG_PANTECH_MEM_LEAK_TRACE) += pantech_memlog.o
